@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "c844bcca7258d1bf",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fe6a01e107e0742",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "FE/全栈/Node.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94ba10f9913c21fd",
+    "type": "split",
+    "children": [
+      {
+        "id": "7244631602bcfbd0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "343ee4d37a1e7ee0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "274f22e6bb44d392",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Node/npm",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "06677683e13cdde5",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 218,
+    "collapsed": true
+  },
+  "right": {
+    "id": "f9c191a5fa5fdc2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4dc65e996206a01d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "526239fd914631cf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "FE/全栈/Node.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b22da9d6f8e7e25a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "FE/全栈/Node.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "935f52cbe512a76b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "306ece3a9869cde2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "FE/全栈/Node.md"
+              }
+            }
+          },
+          {
+            "id": "2e51b5785e90d0c0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9fe6a01e107e0742",
+  "lastOpenFiles": [
+    "FE/FE目录.md",
+    "FE/全栈/Node.md",
+    "FE/全栈/npm.md",
+    "Diary/31_2022-08-03.md",
+    "Diary/31_2022-08-04.md",
+    "Templates/笔记模板.md",
+    "FE/全栈/yarn.md",
+    "Notes/Obsidian 的基础用法.md",
+    "Templates/日记模板.md",
+    "Diary/31_2022-08-02.md"
+  ]
+}

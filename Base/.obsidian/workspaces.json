@@ -1,0 +1,175 @@
+{
+  "workspaces": {
+    "工作管理": {
+      "main": {
+        "id": "c844bcca7258d1bf",
+        "type": "split",
+        "children": [
+          {
+            "id": "d4015ba2d8bd4e02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WorkPanels/计划中.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4b0cdff396c8efb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WorkPanels/规划进行中.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e8ff940784f29bed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WorkPanels/内容修正.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e33c4a6ebdd0bbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WorkPanels/已完成.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "94ba10f9913c21fd",
+        "type": "split",
+        "children": [
+          {
+            "id": "7244631602bcfbd0",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3c0ff4c78ec8606d",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "274f22e6bb44d392",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tags",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "06677683e13cdde5",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 299.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "f9c191a5fa5fdc2b",
+        "type": "split",
+        "children": [
+          {
+            "id": "4dc65e996206a01d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "526239fd914631cf",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "WorkPanels/已完成.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": true,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "b22da9d6f8e7e25a",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "WorkPanels/已完成.md",
+                    "linksCollapsed": true,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "935f52cbe512a76b",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": false
+                  }
+                }
+              },
+              {
+                "id": "306ece3a9869cde2",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "WorkPanels/已完成.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "9e33c4a6ebdd0bbb"
+    }
+  },
+  "active": "工作管理"
+}

@@ -1,0 +1,6 @@
+{
+  "template": "Templates/日记模板",
+  "folder": "Diary",
+  "autorun": true,
+  "format": "WW_YYYY-MM-DD"
+}
