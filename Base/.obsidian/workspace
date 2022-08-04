@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Node.md",
-            "mode": "preview",
+            "file": "FE/全栈/Node 内置模块.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Node.md",
+                "file": "FE/全栈/Node 内置模块.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Node.md",
+                "file": "FE/全栈/Node 内置模块.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Node.md"
+                "file": "FE/全栈/Node 内置模块.md"
               }
             }
           },
@@ -139,15 +139,15 @@
   },
   "active": "9fe6a01e107e0742",
   "lastOpenFiles": [
-    "FE/FE目录.md",
     "FE/全栈/Node.md",
     "FE/全栈/npm.md",
-    "Diary/31_2022-08-03.md",
-    "Diary/31_2022-08-04.md",
+    "FE/全栈/Node 内置模块.md",
     "Templates/笔记模板.md",
-    "FE/全栈/yarn.md",
-    "Notes/Obsidian 的基础用法.md",
     "Templates/日记模板.md",
-    "Diary/31_2022-08-02.md"
+    "FE/全栈/模版.md",
+    "Templates/Note.md",
+    "Test/模板.md",
+    "FE/FE目录.md",
+    "Diary/31_2022-08-04.md"
   ]
 }
