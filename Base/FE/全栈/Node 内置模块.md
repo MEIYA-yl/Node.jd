@@ -46,6 +46,29 @@ server.on('require', (req, res) => {
 server.listen(8000)
 ```
 
+**接口：jsonp** 特点：动态生成script标签、src指向没有跨域限制。
+
+```js
+const http = require('http')
+const url = require('url')
+
+const app = http.createServer((req, res) => {
+	let urlObj = url.parse(req.url, ture)
+	swich(urlObj.pathname){
+		case '/api/user':
+			res.end(`${urlObj.query.callback}`({"name": "gp123"}))	
+			break
+		default:
+			res.end('404')
+			break
+	}
+})
+
+app.listen(3000, () => {
+	console.log('localhost:8080')
+})
+```
+
 ### URL 模块：
 **parse 方法：** 将地址进行解析
 
