@@ -69,6 +69,19 @@ app.listen(3000, () => {
 })
 ```
 
+**跨域：cros**
+
+```js
+// 通过配置请求头开启cors跨域：
+
+res.writeHead( 200, {
+	"Content-Type":"application/json;charset=utf-8", // 请求的内容类型
+	// cors 头
+	"access-control-allow-origin":"*"
+})
+
+```
+
 ### URL 模块：
 **parse 方法：** 将地址进行解析
 
@@ -158,3 +171,4 @@ const querystring = require('querystring')
 let str = 'id%3D3%26city%3Dbeijing%26url%3Dhttp%3A%2F%2Fbaidumap.com'
 let unescaped = querystring.unescape(str)
 ```
+
