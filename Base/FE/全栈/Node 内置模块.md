@@ -178,6 +178,7 @@ res.writeHead( 200, {
 
 ```js
 // 封装get请求
+// get 请求第一个参数：请求地址 第二个参数：监听的数据（res 是一个对象，需要自己对数据进行监听，它是一个数据流在数据被返回时触发）
 
 function httpGet(cb) {
   let data = "";
@@ -190,7 +191,7 @@ function httpGet(cb) {
         });
 
         res.on("end", () => {
-          cb(data);
+          cb(data); // 通过end将完整的数据进行处理
         });
       }
     ).on("error", (e) => {
@@ -238,3 +239,28 @@ function httpPost(cb) {
 
 }
 ```
+
+**爬虫** ：利用 cheerio 外部依赖帮助解析数据信息
+
+```js
+// 在使用上类似于 jq 语法：
+// 这里需要注意的核心是：find 需要用到的数据
+
+function spider(data) {
+  let $ = cheerio.load(data),
+    $movieList = $(".column.content"),
+    movies = [];
+
+  $movieList.each((index, value) => {
+    movies.push({
+      title: $(value).find(".title").text(),
+      grade: $(value).find(".grade").text(),
+      actor: $(value).find(".actor").text(),
+    });
+  });
+  
+  console.log(movies);
+  return JSON.stringify(movies);
+}
+```
+
