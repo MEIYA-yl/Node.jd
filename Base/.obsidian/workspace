@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Node 内置模块.md",
-            "mode": "source",
+            "file": "FE/全栈/Fs 文件操作模块.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Node 内置模块.md",
+                "file": "FE/全栈/Fs 文件操作模块.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Node 内置模块.md",
+                "file": "FE/全栈/Fs 文件操作模块.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Node 内置模块.md"
+                "file": "FE/全栈/Fs 文件操作模块.md"
               }
             }
           },
@@ -140,15 +140,15 @@
   },
   "active": "7099967bc734323a",
   "lastOpenFiles": [
+    "Diary/31_2022-08-06.md",
+    "FE/全栈/Fs 文件操作模块.md",
+    "FE/全栈/Node 内置模块.md",
+    "FE/全栈/Node.md",
     "Test/通过链接来标记一个不存在的文件.md",
     "Notes/Obsidian 的基础用法.md",
     "FE/测试/Vitest.js.md",
     "WorkPanels/已完成.md",
     "Templates/笔记模板.md",
-    "FE/全栈/Node.md",
-    "WorkPanels/内容修正.md",
-    "Diary/31_2022-08-06.md",
-    "FE/全栈/Node 内置模块.md",
-    "FE/全栈/yarn.md"
+    "WorkPanels/内容修正.md"
   ]
 }
