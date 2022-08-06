@@ -140,15 +140,15 @@
   },
   "active": "7099967bc734323a",
   "lastOpenFiles": [
-    "Diary/31_2022-08-06.md",
-    "Diary/31_2022-08-05.md",
-    "Templates/日记模板.md",
-    "Diary/31_2022-08-04.md",
-    "Diary/31_2022-08-02.md",
-    "Diary/31_2022-08-03.md",
-    "FE/全栈/Node 内置模块.md",
+    "Test/通过链接来标记一个不存在的文件.md",
+    "Notes/Obsidian 的基础用法.md",
+    "FE/测试/Vitest.js.md",
+    "WorkPanels/已完成.md",
+    "Templates/笔记模板.md",
     "FE/全栈/Node.md",
-    "FE/FE目录.md",
-    "FE/全栈/npm.md"
+    "WorkPanels/内容修正.md",
+    "Diary/31_2022-08-06.md",
+    "FE/全栈/Node 内置模块.md",
+    "FE/全栈/yarn.md"
   ]
 }

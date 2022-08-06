@@ -264,3 +264,56 @@ function spider(data) {
 }
 ```
 
+**Event** ：解耦
+
+```js
+// event 的使用在于对事件的监听和触发，在处理get/post异步请求参数处理的情况时，通过触发并在服务端进行返回的状态中进行监听触发的事件对象，同时将数据返回。
+
+const { EventEmitter } = require("events")  
+const http = require("http")  
+const https = require("https")  
+const url = require("url")  
+  
+var event = null  
+http.createServer((req,res)=>{  
+    var urlobj = url.parse(req.url,true)  
+    // console.log(urlobj.query.callback)  
+  
+    res.writeHead(200,{  
+        "Content-Type":"application/json;charset=utf-8",  
+        //cors头，  
+        "access-control-allow-origin":"*"  
+    })  
+  
+    switch(urlobj.pathname){  
+        case "/api/aaa":  
+            // 客户端 去猫眼要数据  
+            event = new EventEmitter()  // 这里之所以不在外部声明，是由于事件每一次的调用都会被缓存，导致出现递增性的调用。
+            event.on("play",(data)=>{  
+                console.log(11111)  
+                res.end(data)  
+            })  
+            httpget()  
+            break;  
+        default :  
+            res.end("404")  
+    }  
+}).listen(3000)  
+  
+  
+function httpget(cb){  
+    var data = ""  
+    https.get(`https://i.maoyan.com/api/mmdb/movie/v3/list/hot.json?ct=%E5%8C%97%E4%BA%AC&ci=1&channelId=4`,(res)=>{  
+        res.on("data",(chunk)=>{  
+            data+= chunk  
+        })  
+  
+        res.on("end",()=>{  
+            // cb(data)  
+            event.emit("play",data)  
+            // response.end(data)  
+        })  
+  
+    })  
+}
+```
