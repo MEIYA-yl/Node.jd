@@ -46,42 +46,6 @@ server.on('require', (req, res) => {
 server.listen(8000)
 ```
 
-**接口：jsonp** 特点：动态生成script标签、src指向没有跨域限制。
-
-```js
-const http = require('http')
-const url = require('url')
-
-const app = http.createServer((req, res) => {
-	let urlObj = url.parse(req.url, ture)
-	swich(urlObj.pathname){
-		case '/api/user':
-			res.end(`${urlObj.query.callback}`({"name": "gp123"}))	
-			break
-		default:
-			res.end('404')
-			break
-	}
-})
-
-app.listen(3000, () => {
-	console.log('localhost:8080')
-})
-```
-
-**跨域：cros**
-
-```js
-// 通过配置请求头开启cors跨域：
-
-res.writeHead( 200, {
-	"Content-Type":"application/json;charset=utf-8", // 请求的内容类型
-	// cors 头
-	"access-control-allow-origin":"*"
-})
-
-```
-
 ### URL 模块：
 **parse 方法：** 将地址进行解析
 
@@ -172,3 +136,105 @@ let str = 'id%3D3%26city%3Dbeijing%26url%3Dhttp%3A%2F%2Fbaidumap.com'
 let unescaped = querystring.unescape(str)
 ```
 
+### 跨域 ：
+**jsonp** 特点：动态生成script标签、src指向没有跨域限制。
+
+```js
+const http = require('http')
+const url = require('url')
+
+const app = http.createServer((req, res) => {
+	let urlObj = url.parse(req.url, ture)
+	swich(urlObj.pathname){
+		case '/api/user':
+			res.end(`${urlObj.query.callback}`({"name": "gp123"}))	
+			break
+		default:
+			res.end('404')
+			break
+	}
+})
+
+app.listen(3000, () => {
+	console.log('localhost:8080')
+})
+```
+
+**跨域：cros**
+
+```js
+// 通过配置请求头开启cors跨域：
+
+res.writeHead( 200, {
+	"Content-Type":"application/json;charset=utf-8", // 请求的内容类型
+	// cors 头
+	"access-control-allow-origin":"*"
+})
+
+```
+
+### 请求 模块：
+**get 请求**
+
+```js
+// 封装get请求
+
+function httpGet(cb) {
+  let data = "";
+  https
+    .get(
+      "https://i.maoyan.com/api/mmdb/movie/v3/list/hot.json?ct=%E5%A4%A7%E5%90%8C&ci=129&channelId=4",
+      (res) => {
+        res.on("data", (chunk) => {
+          data += chunk;
+        });
+
+        res.on("end", () => {
+          cb(data);
+        });
+      }
+    ).on("error", (e) => {
+      console.error(e);
+    });
+
+}
+
+```
+
+**post 请求**
+
+```js
+// 通过 https 上的request方法 来触发post请求， 使得浏览器get到接口返回来的数据
+
+// 封装post请求， 
+function httpPost(cb) {
+  let data = "";
+  const options = {
+    hostname: "m.xiaomiyoupin.com",
+    port: 443,
+    path: "/mtop/market/search/placeHolder",
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  const req = https.request(options, (res) => {
+    res.on("data", (chunk) => {
+      data += chunk;
+    }); // 监听data数据
+
+    res.on("end", () => {
+      cb(data); // 通过在创建的本地服务器的端口 将post到的数据返回
+    });
+  });
+
+  req.write(JSON.stringify([{}, { baseParam: { ypClient: 1 } }]));
+  req.end();
+  
+  req.on("error", (e) => {
+    console.error(e);
+  });
+
+}
+```
