@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Node 内置模块.md",
+            "file": "Diary/31_2022-08-06.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Node 内置模块.md",
+                "file": "Diary/31_2022-08-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Node 内置模块.md",
+                "file": "Diary/31_2022-08-06.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Node 内置模块.md"
+                "file": "Diary/31_2022-08-06.md"
               }
             }
           },
@@ -130,7 +130,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -140,14 +141,14 @@
   "active": "7099967bc734323a",
   "lastOpenFiles": [
     "Diary/31_2022-08-05.md",
-    "FE/全栈/Node 内置模块.md",
+    "Diary/31_2022-08-06.md",
+    "Templates/日记模板.md",
     "Diary/31_2022-08-04.md",
-    "Diary/31_2022-08-03.md",
     "Diary/31_2022-08-02.md",
+    "Diary/31_2022-08-03.md",
+    "FE/全栈/Node 内置模块.md",
     "FE/全栈/Node.md",
     "FE/FE目录.md",
-    "FE/全栈/npm.md",
-    "Templates/笔记模板.md",
-    "Templates/日记模板.md"
+    "FE/全栈/npm.md"
   ]
 }
