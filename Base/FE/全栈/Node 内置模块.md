@@ -6,8 +6,10 @@ progress: underway
 
 ## Node 内置模块 基础语法：
 
-### [[Fs 文件操作模块]]
-### [[Stream 流模块]]
+### 文件模块：
+-  [[Fs 文件操作模块]]
+-  [[Stream 流模块]]
+-  [[文件压缩]]
 
 ### HTTP模块：
 **使用http服务器和客户端，必须require('http'):**
@@ -20,6 +22,7 @@ const http = require('http')
 // 创建本地服务器来从其接受数据
 const server = http.createServer((req, res) => {
 	// 接受浏览器传的参数 返回渲染的内容
+	// res 本身是一个可写流
 	res.writeHead(200, { 'Conten-Type': 'application/json'}); // 配置响应头
 	res.end(JSON.stringify({
 		data: 'Hello World'

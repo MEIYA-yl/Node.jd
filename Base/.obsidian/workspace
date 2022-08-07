@@ -6,10 +6,11 @@
       {
         "id": "7099967bc734323a",
         "type": "leaf",
+        "dimension": 99.99999999999999,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Stream 流模块.md",
+            "file": "FE/全栈/文件压缩.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Node/npm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,14 +79,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Stream 流模块.md",
+                "file": "FE/全栈/文件压缩.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -95,9 +96,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Stream 流模块.md",
+                "file": "FE/全栈/文件压缩.md",
                 "linksCollapsed": true,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -118,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Stream 流模块.md"
+                "file": "FE/全栈/文件压缩.md"
               }
             }
           },
@@ -131,7 +132,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -141,14 +142,14 @@
   "active": "7099967bc734323a",
   "lastOpenFiles": [
     "FE/全栈/Node 内置模块.md",
+    "FE/全栈/文件压缩.md",
+    "FE/全栈/Stream 流模块.md",
+    "FE/全栈/Node.md",
+    "FE/FE目录.md",
+    "FE/全栈/Fs 文件操作模块.md",
     "Diary/31_2022-08-07.md",
     "Diary/31_2022-08-05.md",
     "Diary/31_2022-08-06.md",
-    "FE/全栈/Stream 流模块.md",
-    "FE/FE目录.md",
-    "FE/全栈/Node.md",
-    "FE/全栈/Fs 文件操作模块.md",
-    "Test/通过链接来标记一个不存在的文件.md",
-    "Notes/Obsidian 的基础用法.md"
+    "Test/通过链接来标记一个不存在的文件.md"
   ]
 }
