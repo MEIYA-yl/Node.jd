@@ -6,11 +6,10 @@
       {
         "id": "7099967bc734323a",
         "type": "leaf",
-        "dimension": 99.99999999999999,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/文件压缩.md",
+            "file": "FE/全栈/Crypto 加密模块.md",
             "mode": "source",
             "source": false
           }
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/文件压缩.md",
+                "file": "FE/全栈/Crypto 加密模块.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/文件压缩.md",
+                "file": "FE/全栈/Crypto 加密模块.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/文件压缩.md"
+                "file": "FE/全栈/Crypto 加密模块.md"
               }
             }
           },
@@ -141,15 +140,15 @@
   },
   "active": "7099967bc734323a",
   "lastOpenFiles": [
-    "FE/全栈/Node 内置模块.md",
-    "FE/全栈/文件压缩.md",
-    "FE/全栈/Stream 流模块.md",
-    "FE/全栈/Node.md",
-    "FE/FE目录.md",
     "FE/全栈/Fs 文件操作模块.md",
+    "FE/全栈/Crypto 加密模块.md",
+    "FE/FE目录.md",
+    "FE/全栈/Node.md",
+    "FE/全栈/文件压缩.md",
+    "FE/全栈/Node 内置模块.md",
+    "FE/全栈/Stream 流模块.md",
     "Diary/31_2022-08-07.md",
     "Diary/31_2022-08-05.md",
-    "Diary/31_2022-08-06.md",
-    "Test/通过链接来标记一个不存在的文件.md"
+    "Diary/31_2022-08-06.md"
   ]
 }
