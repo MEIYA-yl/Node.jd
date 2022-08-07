@@ -1,7 +1,7 @@
 {
   "theme": "moonstone",
   "translucency": true,
-  "baseFontSize": 14,
+  "baseFontSize": 16,
   "interfaceFontFamily": "Fira Code",
   "monospaceFontFamily": "Operator Mono",
   "textFontFamily": "霞鹜文楷 轻便版"
