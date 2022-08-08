@@ -10,6 +10,46 @@
 
 <body>
 	<h2>Login!</h2>
+	<br>
+	<div>
+		<span>user: <input type="text" id="userId"></span>
+		<span>password: <input type="password" id="password"></span>
+
+		<button id="login">login</button>
+		<button id="user">user</button>
+	</div>
+
+	<script>
+		const u = document.getElementById('userId')
+		const p = document.getElementById("password")
+		const login = document.getElementById('login')
+		const user = document.getElementById('user')
+
+		login.onclick = () => {
+			// 做 get 请求
+			fetch(`/api/login?userId=${u.value}&password=${p.value}`)
+				.then(res => res.json())
+				.then(res => {
+					console.log(res);
+				})
+		}
+
+		user.onclick = () => {
+			fetch(`/api/user`, {
+				// 做 post 请求
+				method: "POST",
+				body: JSON.stringify({
+					userId: u.value,
+					password: p.value
+				}),
+				headers: {
+					"Content-Type": "application/json"
+				}
+			}).then(res => res.text()).then(res => {
+				console.log(res);
+			})
+		}
+	</script>
 </body>
 
 </html>

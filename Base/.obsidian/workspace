@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/参数的获取.md",
+            "file": "FE/全栈/Node/Express.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218,
+    "width": 219.5,
     "collapsed": true
   },
   "right": {
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/参数的获取.md",
+                "file": "FE/全栈/Node/Express.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/参数的获取.md",
+                "file": "FE/全栈/Node/Express.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/参数的获取.md"
+                "file": "FE/全栈/Node/Express.md"
               }
             }
           },
@@ -140,14 +140,14 @@
   "active": "7099967bc734323a",
   "lastOpenFiles": [
     "FE/全栈/Node.md",
-    "FE/全栈/Node 内置模块.md",
-    "FE/全栈/初识 route.md",
-    "FE/全栈/基础.md",
-    "Diary/32_2022-08-08.md",
-    "FE/全栈/Crypto 加密模块.md",
-    "FE/全栈/Fs 文件操作模块.md",
-    "FE/全栈/文件压缩.md",
-    "Diary/路由.md",
-    "Diary/31_2022-08-07.md"
+    "Notes/Obsidian 的基础用法.md",
+    "FE/全栈/Node/Express.md",
+    "FE/全栈/Node/Crypto 加密模块.md",
+    "Templates/笔记模板.md",
+    "FE/FE目录.md",
+    "FE/基础/JavaScript.md",
+    "FE/全栈/Node/yarn.md",
+    "FE/全栈/Node/Stream 流模块.md",
+    "FE/全栈/Node/文件压缩.md"
   ]
 }
