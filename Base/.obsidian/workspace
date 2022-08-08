@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Crypto 加密模块.md",
+            "file": "FE/全栈/参数的获取.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,13 +78,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Crypto 加密模块.md",
+                "file": "FE/全栈/参数的获取.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
               }
             }
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Crypto 加密模块.md",
+                "file": "FE/全栈/参数的获取.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Crypto 加密模块.md"
+                "file": "FE/全栈/参数的获取.md"
               }
             }
           },
@@ -130,8 +130,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -140,15 +139,15 @@
   },
   "active": "7099967bc734323a",
   "lastOpenFiles": [
-    "FE/全栈/Fs 文件操作模块.md",
-    "FE/全栈/Crypto 加密模块.md",
-    "FE/FE目录.md",
     "FE/全栈/Node.md",
-    "FE/全栈/文件压缩.md",
     "FE/全栈/Node 内置模块.md",
-    "FE/全栈/Stream 流模块.md",
-    "Diary/31_2022-08-07.md",
-    "Diary/31_2022-08-05.md",
-    "Diary/31_2022-08-06.md"
+    "FE/全栈/初识 route.md",
+    "FE/全栈/基础.md",
+    "Diary/32_2022-08-08.md",
+    "FE/全栈/Crypto 加密模块.md",
+    "FE/全栈/Fs 文件操作模块.md",
+    "FE/全栈/文件压缩.md",
+    "Diary/路由.md",
+    "Diary/31_2022-08-07.md"
   ]
 }
