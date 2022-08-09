@@ -65,29 +65,17 @@ const parsedStr = url.parse(urlString)
 
 ```js
 const url = require('url')
-
 const urlObject = {
-
   protocol: "https:",
-
   slashes: true,
-
   auth: null,
-
   host: "www.baidu.com:443",
-
   port: "443",
-
   hostname: "www.baidu.com",
-
   hash: "#tag=10",
-
   search: "?id=8&name=mouse",
-
   query: { id: "8", name: "mouse" },
-
   pathname: "/ad/index.html?id=8&name=mose",
-
 };
 
 const parsedObj = url.format(urlObject);
@@ -99,9 +87,7 @@ const parsedObj = url.format(urlObject);
 const url = require('url')
 
 var a = url.resolve("/a/b/c", "d"); // 第二个参数不加/ d将会替换c
-
 var b = url.resolve("http://example.com/a", "/b"); // 域名之后的所有内容都将被第二个参数替换
-
 var c = url.resolve("http://example.com/a", "b");
 ```
 

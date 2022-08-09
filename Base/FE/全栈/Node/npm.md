@@ -13,7 +13,7 @@ progress: underway
 1. 常用命令：
 	- npm init
 	- npm install 包名 -g  (uninstall, update)
-	- npm install 包名 --save-dev (uninstall, update)
+	- npm install 包名 --save-dev (uninstall, update) dev-上线环境
 	- npm list -g (不加-g，列举当前目录下的安装包)
 	- npm info 包名（获取当前包版本详情）
 	- npm info 包名 version （获取最新版本）
