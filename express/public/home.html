@@ -13,6 +13,21 @@
 	<h1>
 		Home ~
 	</h1>
+	<ul class="list">
+
+	</ul>
+	<script>
+		fetch('/login/list').then(res => res.json())
+			.then(res => {
+				render(res)
+			})
+
+		function render(params) {
+			let lis = document.getElementsByClassName("list")[0]
+			const l = params.map((item) => `<li>${item}</li>`)
+			lis.innerHTML = l.join("")
+		}
+	</script>
 </body>
 
 </html>
