@@ -23,7 +23,7 @@ app.get("/aa*bb", (req, res) => {
 });
 
 // 配置静态资源的访问
-app.use(express.static("public")); // 会直接访问到文件夹下的资源 访问地址不需要田间静态资源文件夹路径
+app.use(express.static("public")); // 会直接访问到文件夹下的资源 访问地址不需要添加静态资源文件夹路径
 // app.use("/public", express.static("public")); 需要在访问时添加 路径
 
 app.use((req, res) => {
