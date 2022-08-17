@@ -10,10 +10,14 @@ progress: underway
 
 **导入fs模块：const fs = require('fs')**
 - 创建文件夹：文件重复创建 错误状态码：EEXIST
-	`fs.mkdir('./logs', (e) => { console.log('mkdir') })`
+	`fs.readFile(path[, options], callback`
+	参数解读：`fs.mkdir('./logs', (err, results) => { console.log('mkdir') } // err：读取失败的结果，results：读取成功的结果 )`
+		1. **path**：必选参数，字符串，表示文件的路径。`'./logs'`
+		2. **options**：可选参数，表示以何格式来读取文件。`utf8`
+		3. **callback**：必选参数，文件读取后执行的回调函数，函数可以拿到文件的读取结果。`(err, results) => { console.log('mkdir') }`
 
 - 修改文件夹名称：当修改目标文件不存在 错误状态码：ENOENT
-	`fs.rename('./logs', '.log', (e) => { console.log('rename') })`
+	`fs.rename(path.join(__dirname, './logs'), '.log', (e) => { console.log('rename') })`
 
 - 删除文件：
 	- 如果文件夹下只有一个文件，则无法删除 错误状态码：ENOTEMPTY
@@ -23,7 +27,12 @@ progress: underway
 	`fs.unlink('./logs/targetTxt.txt', (e) => { console.log('unlink') })`
 	
 - 编辑内容到文件中：会将文件中所有的内容都替换掉
-	`fs.writeFile('./logs/targetTxt.txt', 'text !!!', (e) => { console.log('writeFile') })`
+	`fs.writeFile(file, data[, options], callback)`
+	参数解读：`fs.writeFile('./logs/targetTxt.txt', 'text !!!', (e) => { console.log('writeFile') })`
+		1. **file**: 必选参数，需要指定的文件路径字符串，表示文件的存放路径。`'./logs/targetTxt.txt'`
+		2. **data**：必选参数，要写入的内容。`'text !!!'`
+		3. **options**：可选参数，写入文件的内容格式，默认为utf8。`utf8`
+		4. **callback**：必选参数，写入操作完成后要执行的回调函数。
 
 - 追加内容到目标文件：新内容不会覆盖已有内容
 	`fs.appendFile('./logs/targetTxt.txt', 'next !!!', (e) => { console.log('appendFile') })`
@@ -32,7 +41,7 @@ progress: underway
 	`fs.readFile('./logs/targetTxt.txt', utf-8, (e, data) => { console.log('read File') })`
 
 - 读取目标文件目录：目标文件的目录会以数组的形式返回。
-	`fs.readdir('./logs/targetTxt.txt', (e, data) => { console.log('readdir') })H`
+	`fs.readdir('./logs/targetTxt.txt', (e, data) => { console.log('readdir') })`
 
 - 展示目标文件的详细信息：以对象的形式返还目标文件的详情
 	`fs.stat('./logs/targetTxt.txt', (e, data) => { console.log('stat') })`

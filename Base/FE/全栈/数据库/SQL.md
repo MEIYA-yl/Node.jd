@@ -119,3 +119,98 @@ where u.city = 'beijing';
 -- 或者
 select  username as uname, city as c from users
 ```
+
+## 在项目中使用 SQL：
+1. 安装 mysql 模块：
+	mysql 模块是托管于 npm 上的三方模块。它提供了在node.js项目中的链接和操作MySQL数据库的能力。我们可以将mysql安装为项目的依赖包：`npm i mysql` 。
+
+2. 配置musql模块：对模块进行配置。
+```js
+// 1. 导入mysql 模块
+const mysql = require('mysql')
+
+// 2. 建立与MySQL数据库的连接
+const db = mysql.createPool({
+	host: '127.0.0.1', // 数据库的 IP 地址
+	user: 'root', // 登录数据的账号
+	assword: 'admin123', // 登录数据库的密码
+	database: 'my_first_sql' // 指定要操作的数据库
+})
+```
+
+3. 测试 mysql 是否可以正常工作：调用db.query()函数，指定执行的sql语句，通过回调函数拿到执行的结果：
+```js
+db.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+
+  if (error) throw error;
+
+  console.log('The solution is: ', results[0].solution);
+
+});
+```
+
+4. 查询数据：查询 users  表中所有的数据
+```js
+db.query('select * from users', (err, results) => {
+	// 处理查询失败
+	if(err) return console.log(err.message)
+	// 返回查询成功的数据
+	console.log(results)
+})
+```
+
+5. 插入数据：向users表中新增数据，其中username为Spider-Man，password为jklh12，如下：
+```js
+// 插入的数据
+const user = { username: 'Spiderman', password: 'jklh12'}
+// 待执行的sql语句，其中英文的?表示占位符
+const data = 'insert into users (username, password) values (?, ?)'
+// 使用数组的形式，依次为 ? 占位符指定具体的值
+db.query(data, [user.username, user.password], (err, results) => {
+	if (err) return console.log(err.message)
+	if (results.affectedRows === 1) { console.log('数据已插入：') }
+})
+```
+
+6.更新数据：
+```js
+// 更新的数据对象
+
+const updateUser = {
+  id: 100001,
+  username: "zhangwuji",
+  password: "huiho8",
+  city: "shenzhen",
+};
+
+// sql 语句
+const sqlStr = "update users set ? where id = 7";
+db.query(sqlStr, updateUser, (err, results) => {
+  if (err) return console.log(err.message);
+  if (results.affectedRows === 1) {
+    console.log("数据已更新：", results);
+  }
+});
+```
+
+7. 删除数据：在删除数据时，推荐根据id这样的唯一标识来删除对应的数据。
+```js
+// sql 语句
+const deleteSql = "delete from users where id = ?";
+// 如果：sql语句中有多个占位符，则必须使用数组为每个占位符指定具体的值
+// 如果：sql语句中只有一个占位符，则可以省略数组
+db.query(deleteSql, 100001, (err, results) => {
+  if (err) return console.log(err.message);
+  if (results.affectedRows === 1) {
+    console.log("数据已删除：", results);
+  }
+});
+```
+
+8. 标记删除：
+	使用delete语句，会把真正的数据从数据表中删除。为了数据的安全性，推荐使用标记删除的形式，来模拟删除的动作，所谓的标记删除，就是再表中设置类似于status这样的字段，来标记这条数据是否被删除。
+	当用户执行了删除的动作时，我们并没有执行delete语句把数据删除掉，而是执行了update语句，将这条数据对应的status字段标记为删除即可。
+```js
+// 标记删除：使用update语句代替delete语句；只更新数据的状态，并没有真正的删除
+db.query()
+```

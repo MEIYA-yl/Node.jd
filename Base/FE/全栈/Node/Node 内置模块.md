@@ -8,6 +8,7 @@ progress: underway
 
 ### 文件模块：
 -  [[Fs 文件操作模块]]
+-  [[Path 模块]]
 -  [[Stream 流模块]]
 -  [[文件压缩]]
 
