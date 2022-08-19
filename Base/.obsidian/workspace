@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "FE/全栈/Node/Node.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -140,15 +140,15 @@
   },
   "active": "6433b7ad90a75fa3",
   "lastOpenFiles": [
-    "FE/全栈/Node/Node 内置模块.md",
-    "FE/全栈/Node/npm.md",
+    "FE/全栈/Node/Express.md",
     "FE/全栈/Node/Node.md",
+    "FE/全栈/Node/npm.md",
+    "Diary/33_2022-08-19.md",
+    "Diary/31_2022-08-07.md",
+    "FE/全栈/Node/Node 内置模块.md",
     "FE/全栈/Node/Fs 文件操作模块.md",
     "Diary/32_2022-08-11.md",
-    "Diary/31_2022-08-07.md",
     "Diary/32_2022-08-10.md",
-    "Diary/33_2022-08-18.md",
-    "Diary/32_2022-08-08.md",
-    "Diary/32_2022-08-12.md"
+    "Diary/33_2022-08-18.md"
   ]
 }
