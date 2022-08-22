@@ -3,22 +3,32 @@ const route = express.Router();
 
 const { getDb, saveDb } = require("./db");
 
-route.get("/", async (req, res) => {
-  const fileData = await getDb();
-  fileData
-    ? res.status(200).json(fileData.todos)
-    : res.status(500).json({
-        error: err.message,
-      });
+route.get("/", async (req, res, next) => {
+  try {
+    const fileData = await getDb();
+    fileData
+      ? res.status(200).json(fileData.todos)
+      : res.status(500).json({
+          error: err.message,
+        });
+  } catch (err) {
+    next(err);
+  }
 }); // 访问列表
 
-route.get("/:id", async (req, res) => {
-  const db = await getDb();
-  const todo = db.todos.find((todo) => todo.id === req.params.id);
-  todo ? res.status(200).json(todo) : res.status(404).end("error: not found!");
+route.get("/:id", async (req, res, next) => {
+  try {
+    const db = await getDb();
+    const todo = db.todos.find((todo) => todo.id === req.params.id);
+    todo
+      ? res.status(200).json(todo)
+      : res.status(404).end("error: not found!");
+  } catch (err) {
+    next(err);
+  }
 }); // 通过 id 查询
 
-route.post("/", async (req, res) => {
+route.post("/", async (req, res, next) => {
   try {
     // 1. 获取客户端请求体参数
     let todo = req.body; // body 保存了用户请求的数据
@@ -38,13 +48,11 @@ route.post("/", async (req, res) => {
     // 4. 发送响应
     res.status(201).json(todo);
   } catch (err) {
-    res.status(500).json({
-      error: err.message,
-    });
+    next(err);
   }
 }); // 新增数据
 
-route.patch("/:id", async (req, res) => {
+route.patch("/:id", async (req, res, next) => {
   try {
     // 1. 获取数据修改目标数据
     const todo = req.body;
@@ -59,13 +67,11 @@ route.patch("/:id", async (req, res) => {
 
     res.status(200).json(ret);
   } catch (err) {
-    res.status(500).json({
-      error: err.message,
-    });
+    next(err);
   }
 }); // 修改数据
 
-route.delete("/:id", async (req, res) => {
+route.delete("/:id", async (req, res, next) => {
   try {
     // 获取数据
     const db = await getDb();
@@ -80,9 +86,7 @@ route.delete("/:id", async (req, res) => {
     await saveDb(db);
     res.status(204).end();
   } catch (err) {
-    res.status(500).json({
-      error: err.message,
-    });
+    next(err);
   }
 }); // 删除数据
 
