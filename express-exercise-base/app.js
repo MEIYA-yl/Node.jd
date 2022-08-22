@@ -67,9 +67,23 @@ app.patch("/todos/:id", async (req, res) => {
   }
 }); // 修改数据
 
-app.delete("/todos/:id", (req, res) => {
-  res.send("delete/todos/:id");
-});
+app.delete("/todos/:id", async (req, res) => {
+  try {
+    // 获取数据
+    const db = await getDb();
+    // 查找数据
+    const retIdx = db.todos.findIndex((todo) => todo.id === req.params.id);
+    // 剔除
+    retIdx === -1 && res.status(404).end();
+    db.todos.splice(retIdx, 1);
+    await saveDb(db);
+    res.status(204).end();
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
+  }
+}); // 删除数据
 
 app.listen(3000, () => {
   console.log(`Server running at htpp://lcalhost:3000`);
