@@ -1,7 +1,5 @@
 ---
 tags: Fs.note
-aliases：
-progress: underway
 ---
 
 ## Fs 文件操作模块 基础语法：
