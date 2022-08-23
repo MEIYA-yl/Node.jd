@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Node.js",
+                "query": "tag:#note",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -140,15 +141,15 @@
   },
   "active": "6433b7ad90a75fa3",
   "lastOpenFiles": [
-    "FE/全栈/Node/Node.md",
-    "FE/全栈/Node/中间件.md",
+    "FE/全栈/数据库/SQL.md",
     "FE/全栈/Node/express路由.md",
     "FE/全栈/Node/Express.md",
-    "FE/全栈/Node/Fs 文件操作模块.md",
+    "FE/全栈/Node/中间件.md",
+    "FE/全栈/Node/Node.md",
+    "FE/全栈/Node/Stream 流模块.md",
     "FE/FE目录.md",
-    "Diary/34_2022-08-22.md",
-    "FE/全栈/Node/Node 内置模块.md",
-    "Diary/31_2022-08-07.md",
-    "Diary/33_2022-08-21.md"
+    "Diary/34_2022-08-23.md",
+    "FE/全栈/Node/Fs 文件操作模块.md",
+    "Diary/34_2022-08-22.md"
   ]
 }

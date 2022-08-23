@@ -1,7 +1,5 @@
 ---
 tags: Stream 流模块 note
-aliases：
-progress: underway
 ---
 
 ## Stream 流模块 基础语法：
