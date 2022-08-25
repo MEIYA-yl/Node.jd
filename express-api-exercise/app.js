@@ -15,11 +15,11 @@ app.use(express.urlencoded());
 
 // 挂载路由中间件
 app.use("/api", router);
+// 挂载错误中间件
+app.use(errorHandler());
 // 处理 404
 app.use((req, res, next) => {
   res.status(404).end("404 Not Found!");
 });
-// 挂载错误中间件
-app.use(errorHandler());
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));

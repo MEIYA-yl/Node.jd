@@ -1,31 +1,14 @@
 const express = require("express");
+const profileController = require("../controller/profile");
 const router = express.Router();
 
 // 获取用户资料
-router.get("/", (req, res, next) => {
-  try {
-    res.send("获取用户资料");
-  } catch (err) {
-    next(err);
-  }
-});
+router.get("/", profileController.getProfile);
 
 // 关注用户
-router.post("/follow", (req, res, next) => {
-  try {
-    res.send("关注用户");
-  } catch (err) {
-    next(err);
-  }
-});
+router.post("/follow", profileController.followUser);
 
 // 取消用户关注
-router.delete("/follow", (req, res, next) => {
-  try {
-    res.send("取消用户关注");
-  } catch (err) {
-    next(err);
-  }
-});
+router.delete("/follow", profileController.unfollowUser);
 
 module.exports = router;
