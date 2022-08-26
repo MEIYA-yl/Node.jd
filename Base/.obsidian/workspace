@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Node/中间件.md",
+            "file": "FE/全栈/Node/npm.md",
             "mode": "preview",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -79,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Node/中间件.md",
+                "file": "FE/全栈/Node/npm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Node/中间件.md",
+                "file": "FE/全栈/Node/npm.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Node/中间件.md"
+                "file": "FE/全栈/Node/npm.md"
               }
             }
           },
@@ -141,15 +140,15 @@
   },
   "active": "6433b7ad90a75fa3",
   "lastOpenFiles": [
-    "FE/全栈/数据库/SQL.md",
-    "FE/全栈/Node/express路由.md",
-    "FE/全栈/Node/Express.md",
-    "FE/全栈/Node/中间件.md",
     "FE/全栈/Node/Node.md",
-    "FE/全栈/Node/Stream 流模块.md",
+    "Diary/34_2022-08-26.md",
+    "FE/全栈/Node/中间件.md",
+    "FE/全栈/Node/Express.md",
     "FE/FE目录.md",
-    "Diary/34_2022-08-23.md",
-    "FE/全栈/Node/Fs 文件操作模块.md",
-    "Diary/34_2022-08-22.md"
+    "Diary/34_2022-08-25.md",
+    "FE/全栈/Node/express路由.md",
+    "FE/全栈/Node/服务端渲染.md",
+    "Diary/34_2022-08-24.md",
+    "FE/全栈/数据库/SQL.md"
   ]
 }
