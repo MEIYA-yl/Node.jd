@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/Node/中间件.md",
-            "mode": "source",
+            "file": "FE/全栈/Node/Node.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,8 +40,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#note",
-                "matchingCase": false,
+                "query": "中间件",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/Node/中间件.md",
+                "file": "FE/全栈/Node/Node.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/Node/中间件.md",
+                "file": "FE/全栈/Node/Node.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/Node/中间件.md"
+                "file": "FE/全栈/Node/Node.md"
               }
             }
           },
@@ -140,15 +140,15 @@
   },
   "active": "6433b7ad90a75fa3",
   "lastOpenFiles": [
+    "FE/FE目录.md",
+    "FE/全栈/Node/Node.md",
+    "FE/全栈/Node/中间件.md",
+    "Diary/35_2022-08-30.md",
     "Diary/35_2022-08-29.md",
     "FE/全栈/Node/npm.md",
-    "FE/全栈/Node/Node.md",
     "Diary/34_2022-08-26.md",
-    "FE/全栈/Node/中间件.md",
     "FE/全栈/Node/Express.md",
-    "FE/FE目录.md",
     "Diary/34_2022-08-25.md",
-    "FE/全栈/Node/express路由.md",
-    "FE/全栈/Node/服务端渲染.md"
+    "FE/全栈/Node/express路由.md"
   ]
 }
