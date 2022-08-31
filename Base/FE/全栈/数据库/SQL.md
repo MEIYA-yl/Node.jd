@@ -201,7 +201,7 @@ const deleteSql = "delete from users where id = ?";
 // 如果：sql语句中只有一个占位符，则可以省略数组
 db.query(deleteSql, 100001, (err, results) => {
   if (err) return console.log(err.message);
-  if (results.affectedRows === 1) {
+  if (results.affectedRows === 1) { // affectedRows 影响行数
     console.log("数据已删除：", results);
   }
 });
