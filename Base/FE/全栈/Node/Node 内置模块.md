@@ -1,7 +1,5 @@
 ---
-tags: Node 内置模块 note
-aliases：
-progress: underway
+tags: node内置模块
 ---
 
 ## Node 内置模块 基础语法：

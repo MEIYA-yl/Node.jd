@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "6433b7ad90a75fa3",
+        "id": "b512bd85bff54e26",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FE/全栈/数据库/SQL.md",
-            "mode": "preview",
-            "source": true
+            "file": "FE/全栈/数据库/Sequelize.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "中间件",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "FE/全栈/数据库/SQL.md",
+                "file": "FE/全栈/数据库/Sequelize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "FE/全栈/数据库/SQL.md",
+                "file": "FE/全栈/数据库/Sequelize.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FE/全栈/数据库/SQL.md"
+                "file": "FE/全栈/数据库/Sequelize.md"
               }
             }
           },
@@ -138,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6433b7ad90a75fa3",
+  "active": "b512bd85bff54e26",
   "lastOpenFiles": [
-    "Diary/35_2022-08-31.md",
-    "FE/全栈/Node/Node.md",
-    "FE/FE目录.md",
-    "FE/全栈/Node/中间件.md",
-    "Diary/35_2022-08-30.md",
-    "Diary/35_2022-08-29.md",
+    "FE/全栈/数据库/MongoDB.md",
+    "FE/全栈/Node/Sequelize.md",
+    "FE/全栈/Node/yarn.md",
     "FE/全栈/Node/npm.md",
-    "Diary/34_2022-08-26.md",
-    "FE/全栈/Node/Express.md",
-    "Diary/34_2022-08-25.md"
+    "FE/全栈/Node/Stream 流模块.md",
+    "FE/全栈/Node/Path 模块.md",
+    "FE/全栈/Node/Node 内置模块.md",
+    "FE/全栈/Node/Node.md",
+    "FE/全栈/Node/Fs 文件操作模块.md",
+    "FE/全栈/Node/Express.md"
   ]
 }

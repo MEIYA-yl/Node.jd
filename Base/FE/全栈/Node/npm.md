@@ -1,5 +1,5 @@
 ---
-tags: npm note
+tags: npm 包管理器
 ---
 
 ## npm 的使用：

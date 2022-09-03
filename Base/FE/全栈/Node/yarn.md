@@ -1,7 +1,5 @@
 ---
-tags: yarn note
-aliases：
-progress: underway
+tags: yarn note 包管理器
 ---
 
 ## yarn 使用基础：

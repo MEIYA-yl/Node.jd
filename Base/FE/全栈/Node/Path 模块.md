@@ -1,7 +1,5 @@
 ---
-tags: Path note node
-aliases：
-progress: underway
+tags: Path node
 ---
 
 ## Path 模块 基础语法：
