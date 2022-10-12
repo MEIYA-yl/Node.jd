@@ -1,4 +1,4 @@
-exports.listtArticle = async (req, res, next) => {
+exports.listArticle = async (req, res, next) => {
   try {
     res.send("listArticle");
   } catch (err) {

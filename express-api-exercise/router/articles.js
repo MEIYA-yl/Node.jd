@@ -3,7 +3,7 @@ const articleController = require("../controller/articles");
 const router = express.Router();
 
 // 获取文章列表
-router.get("/", articleController.listtArticle);
+router.get("/", articleController.listArticle);
 
 // 获取用户创建的文章
 router.get("/feed", articleController.feedArticle);
